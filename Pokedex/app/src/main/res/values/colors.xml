@@ -9,7 +9,8 @@
 
     <color name="black_transparent">#80000000</color>
 
-
+    <color name="lightBlue">#70C0FF</color>
+    <color name="lightYellow">#FFF48F</color>
     <color name="red">#E3334F</color>
     <color name="orange">#EF5434</color>
 

@@ -7,13 +7,12 @@
     android:padding="16dp"
     >
 
-    <ImageView
+    <ImageButton
+        android:id="@+id/pokemon_image"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/pokemon_logo_min"
         android:layout_gravity="center"
-        android:id="@+id/pokemon_image"
-        />
+        android:src="@drawable/pokemon_logo_min" />
 
     <TextView
         android:layout_width="match_parent"
