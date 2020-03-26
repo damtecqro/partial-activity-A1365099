@@ -92,7 +92,7 @@ class ActivityDetail : AppCompatActivity() {
                                 R.drawable.pokemon_logo_min
                             )
                         )
-                        Log.e("JSON", "No sprite")
+                        Log.e("JSON", "Null")
                     }
 
                     if(!data.get("name").isJsonNull){
@@ -110,7 +110,7 @@ class ActivityDetail : AppCompatActivity() {
 
                         }
                     } else {
-                        Log.e("JSON","No types")
+                        Log.e("JSON","Null")
                     }
 
                     if(!data.get("stats").isJsonNull){
@@ -119,10 +119,9 @@ class ActivityDetail : AppCompatActivity() {
                             val statValue = stats.get(i).asJsonObject.get("base_stat")
                             val statName = stats.get(i).asJsonObject.get("stat").asJsonObject.get("name")
                             val statInfo = statName.toString().replace("\"", "").replace("-"," ").capitalizeWords() + " = " + statValue.toString()
-
                         }
                     } else {
-                        Log.e("JSON","No stats")
+                        Log.e("JSON","Null")
                     }
 
                     if(!data.get("moves").isJsonNull){
@@ -133,13 +132,12 @@ class ActivityDetail : AppCompatActivity() {
 
                         }
                     } else {
-                        Log.e("JSON","No moves")
+                        Log.e("JSON","null")
                     }
                 }
                 initializeList()
             }
     }
-
     fun initializeList(){
         linearLayoutManager = LinearLayoutManager(context)
         linearLayoutManager.orientation = LinearLayoutManager.VERTICAL

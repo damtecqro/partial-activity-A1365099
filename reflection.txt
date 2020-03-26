@@ -1,0 +1,3 @@
+Daniel Zavalza A01365099 
+
+the difficult part was to make that it shows the actual info of the pokemon, i didn't make it to show stats or any info about the pokemon, only the name and the image.
